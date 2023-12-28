@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Maintenance Page</title>
- <style>
-    body {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 100vh;
-       margin: 0;
-       background-color: #1e1f20; /* dark background */
-       color: ##ed5e00;
-       font-family: 'Comic Sans MS', sans-serif; /* Material font */
-    }
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Maintenance Page</title>
+   <style>
+       body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           background-color: #1e1f20; /* dark background */
+           color: #ed5e00;
+           font-family: 'Comic Sans MS', sans-serif;
+       }
 
-    #message {
-       text-align: center;
-       font-size: 1.5em;
-       line-height: 1.6;
-       background-color: #2f3133; /* lighter color */
-       padding: 20px; /* space around the text */
-       box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.2); /* pronounced shadow */
-    }
- </style>
+       #message {
+           text-align: center;
+           font-size: 1.5em;
+           line-height: 1.6;
+           background-color: #2f3133; /* lighter color */
+           padding: 20px; /* space around the text */
+           box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.2); /* pronounced shadow */
+           border-radius: 10px; /* Add this line */
+       }
+
+       .center {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .my-button {
+           padding: 10px 20px;
+           background-color: #ff8f00;
+           color: black;
+           font-weight: bold;
+           border: none;
+           cursor: pointer;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           user-select: none;
+           -webkit-tap-highlight-color: transparent;
+           -ms-user-select: none;
+           -moz-user-select: none;
+           -webkit-user-select: none;
+           outline: none;
+           font-family: 'Comic Sans MS', sans-serif;
+           border-radius: 8px; /* Add this line */
+       }
+
+       .my-button a {
+           text-decoration: none;
+       }
+
+       a:visited {
+           color: inherit;
+       }
+   </style>
 </head>
 <body>
- <div class="center">
-     <p id="message">Down for maintenance, contact Frank to add new content</p>
- </div>
+   <div class="center">
+       <p id="message">Down for maintenance, contact Frank to add new content</p>
+       <button class="my-button"><a href="http://franke.vip">Go back</a></button>
+   </div>
 </body>
 </html>
